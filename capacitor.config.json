@@ -1,0 +1,9 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "myPrintApp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {},
+  "linuxAndroidStudioPath": "/snap/android-studio/current/android-studio/bin/studio.sh"
+}

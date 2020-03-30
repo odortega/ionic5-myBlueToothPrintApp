@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">myPrintApp</string>
+    <string name="title_activity_main">myPrintApp</string>
+    <string name="package_name">ionic5.myprintapp</string>
+    <string name="custom_url_scheme">ionic5.myprintapp</string>
+</resources>
