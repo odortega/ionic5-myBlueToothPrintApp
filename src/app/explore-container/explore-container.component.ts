@@ -11,17 +11,15 @@ export class ExploreContainerComponent implements OnInit {
 
   bluetoothList: any = [];
   selectedPrinter: any;
-  constructor(private print: PrintService) { }
+  constructor(private print: PrintService) {
+    this.listPrinter();
+  }
   //This will list all of your bluetooth devices
   listPrinter() {
     this.print.searchBluetoothPrinter()
       .then(resp => {
-
         //List of bluetooth device list
         this.bluetoothList = resp;
-
-        console.log('test debug ... Gloria a ti Señor Jesús');
-
       });
   }
   //This will store selected bluetooth device mac address
@@ -33,10 +31,11 @@ export class ExploreContainerComponent implements OnInit {
   //This will print
   printStuff() {
     //The text that you want to print
-    var myText = "Hello hello hello \n\n\n This is a test \n\n\n";
+    var myText = "Gloria a ti Señor Jesús \n\n\n This is a test \n\n\n";
     this.print.sendToBluetoothPrinter(this.selectedPrinter, myText);
   }
 
-  ngOnInit() { }
+  ngOnInit() { 
+  }
 
 }

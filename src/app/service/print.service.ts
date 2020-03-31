@@ -9,13 +9,9 @@ export class PrintService {
   constructor(public btSerial: BluetoothSerial) {
   }
 
-  searchBluetoothPrinter(): any {
+  searchBluetoothPrinter() {
     //This will return a list of bluetooth devices
-    this.btSerial.list().then(res=>{
-      return res;
-    }).catch(err=>{
-        console.log('Error listing blue tooth devices: ' + err);
-    });
+    return this.btSerial.list();
   }
   connectToBluetoothPrinter(macAddress) {
     //This will connect to bluetooth printer via the mac address provided
